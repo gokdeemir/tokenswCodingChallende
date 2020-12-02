@@ -41,7 +41,6 @@ public class PaymentService {
 
     public ResponseEntity<JsonNode> payWithQR( Payment payment) {
         HttpHeaders headers = headerUtil.getOysRequestHeader();
-        payment.setQRdata(payment.getQrData());
         HttpEntity<Payment> entity = new HttpEntity<>(payment, headers);
         RestTemplate restTemplate = restTemplate();
         return restTemplate.postForEntity(OysConstant.API_PAYOSY_URL + "/payment", entity, JsonNode.class);
@@ -49,7 +48,6 @@ public class PaymentService {
 
     public ResponseEntity<JsonNode> refundWithQR( Refund refund) {
         HttpHeaders headers = headerUtil.getOysRequestHeader();
-        refund.setQRdata(refund.getQrData());
         HttpEntity<Refund> entity = new HttpEntity<>(refund, headers);
         RestTemplate restTemplate = restTemplate();
         return restTemplate.postForEntity(OysConstant.API_PAYOSY_URL + "/payment", entity, JsonNode.class);

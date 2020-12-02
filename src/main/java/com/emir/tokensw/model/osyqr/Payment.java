@@ -1,5 +1,6 @@
 package com.emir.tokensw.model.osyqr;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.JsonNode;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -22,10 +23,6 @@ public class Payment {
     private String receiptMsgCustomer;
     private String receiptMsgMerchant;
     private JsonNode paymentInfoList;
+    @JsonProperty("QRdata")
     private String qrData;
-    private String QRdata;
-
-    public void setQRdata(String QRdata) {
-        this.QRdata = QRdata;
-    }
 }

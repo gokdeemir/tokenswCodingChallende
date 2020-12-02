@@ -1,5 +1,6 @@
 package com.emir.tokensw.model.osyqr;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -20,14 +21,6 @@ public class Refund {
     private String returnDesc;
     private String receiptMsgCustomer;
     private String receiptMsgMerchant;
-    private String QRdata;
+    @JsonProperty("QRdata")
     private String qrData;
-
-    public void setQRdata(String QRdata) {
-        this.QRdata = QRdata;
-    }
-
-    public String getQrData() {
-        return qrData;
-    }
 }
