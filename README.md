@@ -1,4 +1,4 @@
-# tokenswCodingChallende
+# tokenswCodingChallenge
 QR kod oluşturmak yerine uygulama içinde bekleyen ödemeler sekmesinde ödeme bildirim olarak gelir.
 Ve bu bildirime tıklayınca detay sayfasına gider.
 Detay sayfasından da  onay butonuna basarak payosy'e onay versin.
