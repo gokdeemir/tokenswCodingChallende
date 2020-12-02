@@ -1,0 +1,13 @@
+{
+  "properties": [
+    {
+      "name": "tokensw.x-ibm-client-secret",
+      "type": "java.lang.String",
+      "description": "Description for tokensw.x-ibm-client-secret."
+    },
+    {
+      "name": "tokensw.x-ibm-client-id",
+      "type": "java.lang.String",
+      "description": "Description for tokensw.x-ibm-client-id."
+    }
+  ] }
