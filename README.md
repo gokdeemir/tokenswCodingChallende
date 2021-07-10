@@ -1,10 +1,10 @@
 # tokenswCodingChallenge
-Kullanıcı QR kod oluşturmak yerine uygulama içinde bekleyen ödemeler sekmesinde ödeme bildirim olarak gelir.
-Ve bu bildirime tıklayınca detay sayfasına gider.
-Detay sayfasından da  onay butonuna basarak payosy'e onay verir
+Instead of creating a QR code, the user receives a payment notification in the pending payments tab within the application.
+And when you click on this notification, it goes to the detail page.
+He approves payosy by clicking the confirmation button on the detail page.
  
-Benim backend case'imde ise mobil taraf qr code'unu sisteme yükleyerek gelen qr code text'iyle işlemlerine devam edebilecek. Gerekli dataları aşağıda linkini bulacağınız api dökümastasyonunda bulacağınız modellere uygun olarak backend'e göndererek transaction işlemlerinizi yapabilirsiniz.
+In my backend case, the mobile party will be able to upload the qr code to the system and continue its operations with the qr code text received. You can perform your transactions by sending the necessary data to the backend in accordance with the models you will find in the API documentation, the link of which you can find below.
 
-Ayrıca uygulamayı ayağa kaldırdığınızda http://localhost:8080/swagger-ui.html#/ adresinde api dökümasyonunu bulabilirsiniz.
+Also, when you install the application, you can find the api documentation at http://localhost:8080/swagger-ui.html#/.
  
  
